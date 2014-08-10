@@ -30,4 +30,8 @@ public class AccountStore {
             + PARENT_ACCOUNT_ID + " integer, "
             + FULL_NAME + " varchar(255), "
             + DESCRIPTION + " varchar(2000));";
+
+    public AccountStore() {
+
+    }
 }
