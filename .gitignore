@@ -27,6 +27,7 @@ target/
 
 # android studio 
 *.iml
+.idea/
 
 # private info 
 *.keystore
