@@ -5,23 +5,23 @@ package com.weibo.bookkeeper.model;
  */
 public class Transaction {
 
-    private long id;
+    private Long id;
 
     private String name;
 
     private String type;
 
-    private double amount;
+    private Double amount;
 
     private String currencyCode;
 
     private String description;
 
-    private long createTime;
+    private Long createTime;
 
-    private long accountId;
+    private Long accountId;
 
-    public Transaction(long id, String name, String type, double amount, String currencyCode, String description, long createTime, long accountId) {
+    public Transaction(Long id, String name, String type, Double amount, String currencyCode, String description, Long createTime, Long accountId) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -32,11 +32,11 @@ public class Transaction {
         this.accountId = accountId;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -56,11 +56,11 @@ public class Transaction {
         this.type = type;
     }
 
-    public double getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
@@ -80,19 +80,19 @@ public class Transaction {
         this.description = description;
     }
 
-    public long getCreateTime() {
+    public Long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(long createTime) {
+    public void setCreateTime(Long createTime) {
         this.createTime = createTime;
     }
 
-    public long getAccountId() {
+    public Long getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(long accountId) {
+    public void setAccountId(Long accountId) {
         this.accountId = accountId;
     }
 }

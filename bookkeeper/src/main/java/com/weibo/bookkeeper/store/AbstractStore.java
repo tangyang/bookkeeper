@@ -19,15 +19,17 @@ public abstract class AbstractStore<T> {
         db = dbHelper.getWritableDatabase();
     }
 
-    protected abstract boolean store(T bean);
+    protected abstract long store(T bean);
 
-    protected abstract boolean deleteByIds(List<Long> ids);
+    protected abstract int updateById(T bean);
 
-    protected abstract boolean deleteAll();
+    protected abstract int deleteByIds(List<Long> ids);
+
+    protected abstract int deleteAll();
 
     protected abstract T queryById(long id);
 
-    protected abstract List<T> queryByPage(int page, int size);
+    protected abstract List<T> queryByIdOffset(Long offset, int size);
 
     public void close() {
         dbHelper.close();

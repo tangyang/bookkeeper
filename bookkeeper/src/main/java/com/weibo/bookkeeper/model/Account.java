@@ -5,7 +5,7 @@ package com.weibo.bookkeeper.model;
  */
 public class Account {
 
-    private long id;
+    private Long id;
 
     private String name;
 
@@ -15,11 +15,11 @@ public class Account {
 
     private String fullName;
 
-    private long parentAccountId;
+    private Long parentAccountId;
 
     private String description;
 
-    public Account(long id, String name, String type, String baseCurrency, String fullName, long parentAccountId, String description) {
+    public Account(Long id, String name, String type, String baseCurrency, String fullName, Long parentAccountId, String description) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -29,7 +29,7 @@ public class Account {
         this.description = description;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,7 +49,7 @@ public class Account {
         this.fullName = fullName;
     }
 
-    public void setParentAccountId(long parentAccountId) {
+    public void setParentAccountId(Long parentAccountId) {
         this.parentAccountId = parentAccountId;
     }
 
@@ -57,7 +57,7 @@ public class Account {
         this.description = description;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -77,7 +77,7 @@ public class Account {
         return fullName;
     }
 
-    public long getParentAccountId() {
+    public Long getParentAccountId() {
         return parentAccountId;
     }
 
